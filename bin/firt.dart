@@ -10,6 +10,7 @@ void main() {
       ConsoleUtils.lerStringComTexto("Informe nome do aluno: ");
   try {
     if (inserirNomeAluno.trim() == "") {
+      inserirNomeAluno = "SUPOSTO(A)";
       throw NomeInvalidoException();
     }
   } catch (NomeInvalidoException) {
