@@ -1,8 +1,8 @@
 import 'dart:core';
 
+import 'exception/nome_invalido_exception.dart';
 import 'models/aluno.dart';
 import 'models/console_utils.dart';
-import 'exception/nome_invalido_exception.dart';
 
 void main() {
   print("Bem vindo ao sistema de notas!");

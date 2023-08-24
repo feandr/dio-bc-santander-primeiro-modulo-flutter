@@ -18,16 +18,13 @@ class Aluno {
     _notas.add(nota);
   }
 
-  List<double> getNotas(){
+  List<double> getNotas() {
     return _notas;
   }
 
-  double retornaMedia(){
-    var totalNotas = 0.0;
-    for ( var nota in _notas) {
-      totalNotas = totalNotas + nota;
-    }
-    var media = totalNotas / _notas.length;
+  double retornaMedia() {
+    var media =
+        _notas.reduce((value, element) => value + element) / _notas.length;
     return media.isNaN ? 0 : media;
   }
 

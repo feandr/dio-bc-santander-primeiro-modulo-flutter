@@ -24,15 +24,14 @@ class ConsoleUtils {
     do {
       try {
         var value = lerStringComTexto(texto);
-        if(value == valorSaida){
+        if (value == valorSaida) {
           return null;
         }
         return double.parse(value);
       } catch (e) {
-       print(texto);
+        print(texto);
       }
-    } while(true);
-
+    } while (true);
   }
 
   static double? lerDoubleComTexto(String texto) {
